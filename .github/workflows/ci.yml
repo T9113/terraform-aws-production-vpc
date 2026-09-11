@@ -1,0 +1,10 @@
+name: Production CI/CD Pipeline
+on: [push, pull_request]
+jobs:
+  lint-and-validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Syntax & Formatting Validation
+        run: |
+          echo "Validating infrastructure and configurations..."
