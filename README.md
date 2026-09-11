@@ -1,4 +1,4 @@
-# 🚀 AWS Production Multi-AZ VPC Architecture
+# :rocket: AWS Production Multi-AZ VPC Architecture
 
 <div align="center">
 
@@ -12,7 +12,7 @@
 
 ---
 
-## 📌 Executive Summary
+## :memo: Executive Summary
 
 Enterprise Terraform module provisioning a resilient, highly available Multi-AZ AWS VPC with private subnets, redundant NAT Gateways, Transit Gateway attachments, and VPC S3 endpoints.
 
@@ -20,7 +20,7 @@ Designed for mission-critical enterprise environments requiring 99.99% availabil
 
 ---
 
-## 🏗️ System Architecture
+## :building_construction: System Architecture
 
 ```text
 +-------------------------------------------------------------------------+
@@ -48,30 +48,31 @@ Designed for mission-critical enterprise environments requiring 99.99% availabil
 
 ---
 
-## ✨ Key Enterprise Capabilities
+## :sparkles: Key Enterprise Capabilities
 
-- ⚡ **High Availability & Fault Tolerance:** Multi-zone redundancy with automated recovery and graceful degradation.
-- 🛡️ **Zero-Trust Security Posture:** Least-privilege IAM roles, encrypted communications (TLS 1.3/mTLS), and strict network isolation.
-- 📈 **Continuous Scalability:** Elastic compute scaling driven by real-time queue depth and CPU/memory pressure metrics.
-- 🔍 **Full-Stack Observability:** Structured telemetry exportable to Prometheus, Datadog, CloudWatch, and OpenTelemetry.
-- 🚀 **Automated CI/CD Ready:** Pre-configured for seamless automated testing, container scanning, and GitOps rollouts.
+- :zap: **High Availability & Fault Tolerance:** Multi-zone redundancy with automated recovery and graceful degradation.
+- :shield: **Zero-Trust Security Posture:** Least-privilege IAM roles, encrypted communications (TLS 1.3/mTLS), and strict network isolation.
+- :chart_with_upwards_trend: **Continuous Scalability:** Elastic compute scaling driven by real-time queue depth and CPU/memory pressure metrics.
+- :mag: **Full-Stack Observability:** Structured telemetry exportable to Prometheus, Datadog, CloudWatch, and OpenTelemetry.
+- :package: **Automated CI/CD Ready:** Pre-configured for seamless automated testing, container scanning, and GitOps rollouts.
 
 ---
 
-## 📂 Repository Directory Structure
+## :file_folder: Repository Directory Structure
 
 ```text
-├── main.tf              # Primary VPC, CIDR block allocation, and Internet Gateway
-├── variables.tf         # Environment, CIDR, AZ count, and peering variables
-├── outputs.tf           # Subnet IDs, VPC ID, and route table references
-├── vpc_endpoints.tf     # Private S3 and DynamoDB Gateway VPC endpoints
-├── LICENSE              # MIT License
-└── README.md            # Enterprise architecture documentation
+.
+|-- main.tf              # Primary VPC, CIDR block allocation, and Internet Gateway
+|-- variables.tf         # Environment, CIDR, AZ count, and peering variables
+|-- outputs.tf           # Subnet IDs, VPC ID, and route table references
+|-- vpc_endpoints.tf     # Private S3 and DynamoDB Gateway VPC endpoints
+|-- LICENSE              # MIT License
+`-- README.md            # Enterprise architecture documentation
 ```
 
 ---
 
-## ⚡ Quick Start & Deployment
+## :zap: Quick Start & Deployment
 
 ```bash
 # Initialize Terraform
@@ -89,7 +90,7 @@ terraform apply -auto-approve
 
 ---
 
-## ⚙️ Configuration Reference
+## :gear: Configuration Reference
 
 | Variable | Type | Default | Description |
 | :--- | :--- | :--- | :--- |
@@ -100,7 +101,7 @@ terraform apply -auto-approve
 
 ---
 
-## 🛡️ Security, Compliance & Governance
+## :lock: Security, Compliance & Governance
 
 1. **Least-Privilege RBAC:** Every component operates under strictly bounded permissions.
 2. **Encrypted Storage & Transit:** All payloads encrypted using AES-256 / KMS at rest and TLS 1.3 in flight.
@@ -109,15 +110,15 @@ terraform apply -auto-approve
 
 ---
 
-## 👨‍💻 Author & Maintainer
+## :bust_in_silhouette: Author & Maintainer
 
 **Tayyab Masood**  
 Cloud Solutions Architect & Senior DevOps Engineer  
-- 🌐 **GitHub:** [@T9113](https://github.com/T9113)  
-- 📜 **Certification:** AWS Certified Solutions Architect - Associate  
+- :globe_with_meridians: **GitHub:** [@T9113](https://github.com/T9113)  
+- :scroll: **Certification:** AWS Certified Solutions Architect - Associate  
 
 ---
 
-## 📄 License
+## :page_facing_up: License
 
 This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
